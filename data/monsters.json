@@ -1,0 +1,10 @@
+[
+  {"id": "slime", "name": "슬라임", "element": "물", "level": 3, "hp": 40, "atk": 5, "weakness": "전기"},
+  {"id": "goblin", "name": "고블린", "element": "땅", "level": 5, "hp": 60, "atk": 12, "weakness": "물"},
+  {"id": "fire_bat", "name": "불박쥐", "element": "불", "level": 7, "hp": 55, "atk": 18, "weakness": "물"},
+  {"id": "vine_golem", "name": "덩굴 골렘", "element": "풀", "level": 12, "hp": 200, "atk": 22, "weakness": "불"},
+  {"id": "thunder_wolf", "name": "번개 늑대", "element": "전기", "level": 15, "hp": 150, "atk": 35, "weakness": "땅"},
+  {"id": "lava_turtle", "name": "용암 거북", "element": "불", "level": 20, "hp": 400, "atk": 28, "weakness": "물"},
+  {"id": "sea_serpent", "name": "바다뱀", "element": "물", "level": 25, "hp": 320, "atk": 45, "weakness": "풀"},
+  {"id": "ancient_dragon", "name": "고대 용", "element": "불", "level": 50, "hp": 2000, "atk": 120, "weakness": "물"}
+]
