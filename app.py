@@ -7,7 +7,7 @@ from flask import Flask, jsonify, request
 app = Flask(__name__)
 app.json.ensure_ascii = False
 
-VERSION = "0.3.1"
+VERSION = "0.4.0"
 BASE_DIR = pathlib.Path(__file__).parent
 
 
@@ -25,11 +25,6 @@ def index():
 def health():
     return jsonify({"status": "ok", "version": VERSION})
 
-
-@app.route("/monsters")
-def monster_list():
-    return jsonify(load_monsters())
-
 @app.route("/monsters")
 def monster_list():
     monsters = load_monsters()
@@ -41,6 +36,13 @@ def monster_list():
         if monster["element"] == element:
             result.append(monster)
     return jsonify(result)
+
+
+@app.route("/monsters")
+def monster_list():
+    return jsonify(load_monsters())
+
+
 
 @app.route("/monsters/<monster_id>")
 def monster_detail(monster_id):
